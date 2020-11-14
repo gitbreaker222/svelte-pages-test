@@ -16,7 +16,8 @@
 	}
 
 	.card {
-		width: 11cm;
+		width: 100%;
+		max-width: 11cm;
 		border-radius: 3px;
 		text-align: center;
 		box-shadow: 0 0 2px #ccc;
@@ -26,20 +27,21 @@
 	h1 {
 		color: rebeccapurple;
 		text-transform: uppercase;
-		font-size: 4rem;
+		font-size: 3rem;
 		font-weight: 100;
 		line-height: 1.1;
-		margin: 4rem auto;
+		margin: 2rem auto;
 		max-width: 14rem;
 	}
 
 	@media (min-width: 480px) {
 		h1 {
-			max-width: none;
+			font-size: 4rem;
 		}
-
-		p {
-			max-width: none;
+	}
+	@media (min-height: 480px) {
+		h1 {
+			margin: 4rem auto;
 		}
 	}
 </style>

@@ -9,6 +9,7 @@
 
 <style>
 	:root {
+		--nav-size: 3rem;
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	}
 
@@ -26,6 +27,7 @@
 		justify-content: space-between;
 		min-height: 100vh;
 		padding: 1em;
+		padding-bottom: var(--nav-size);
 		position: relative;
 	}
 </style>
