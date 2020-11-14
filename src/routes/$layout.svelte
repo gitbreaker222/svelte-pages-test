@@ -3,8 +3,8 @@
 </script>
 
 <main>
+	<slot></slot>
 	<Nav></Nav>
-  <slot></slot>
 </main>
 
 <style>
@@ -12,9 +12,20 @@
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	}
 
+	:global(*) {
+		box-sizing: border-box;
+	}
+
+	:global(body) {
+		margin: 0;
+	}
+
 	main {
-		text-align: center;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		min-height: 100vh;
 		padding: 1em;
-		margin: 0 auto;
+		position: relative;
 	}
 </style>

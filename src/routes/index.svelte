@@ -1,27 +1,36 @@
 <script>
-	import Counter from '$components/Counter.svelte';
 </script>
 
-<h1>Hello world!</h1>
-
-<Counter/>
-<p>Visit the <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte apps.</p>
+<div class="layout">
+	<div class="card">
+		<h1>Digital!</h1>
+		<h2>On . leicht</h2>
+	</div>
+</div>
 
 <style>
+  .layout {
+		flex: 1;
+		display: grid;
+		place-items: center;
+	}
+
+	.card {
+		width: 11cm;
+		border-radius: 3px;
+		text-align: center;
+		box-shadow: 0 0 2px #ccc;
+		background: #f1f1f1;
+	}
+
 	h1 {
-		color: #ff3e00;
+		color: rebeccapurple;
 		text-transform: uppercase;
 		font-size: 4rem;
 		font-weight: 100;
 		line-height: 1.1;
 		margin: 4rem auto;
 		max-width: 14rem;
-	}
-
-	p {
-		max-width: 14rem;
-		margin: 2rem auto;
-		line-height: 1.35;
 	}
 
 	@media (min-width: 480px) {

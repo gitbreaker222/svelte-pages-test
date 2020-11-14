@@ -1,3 +1,7 @@
-<h1>About</h1>
- Heavy? 
- <h2>Metal!</h2>
+<div class="layout">
+  <h1>About</h1>
+  
+  <p>
+    Worum es geht ...
+  </p>
+</div>
